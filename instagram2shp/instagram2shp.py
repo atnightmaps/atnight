@@ -6,9 +6,6 @@ import urllib2
 import json
 import time
 
-##tokenJ='248993423.1fb234f.d6cce07035894ef3b311028989bf812f'
-##tokenP='253660527.1fb234f.a1e49e5f87254444b19f633e3757394e'
-
 files='insta_hist02'
 
 currentT=int(time.time())
@@ -55,10 +52,8 @@ def getUrl(lat,lng):
     maxT= str(currentT)
     minT= str(currentT-lapsus+1)
     dist= '1500'
-    token= '253660527.1fb234f.a1e49e5f87254444b19f633e3757394e'
+    token= ''
 
-#    url1= 'https://api.instagram.com/v1/media/search?lat=41.38&lng=2.18&distance=5000&access_token=248993423.1fb234f.d6cce07035894ef3b311028989bf812f'
-#    url2= 'https://api.instagram.com/v1/media/search?lat='+lat+'&lng='+lng+'&distance='+dist+'&access_token='+token
     url3= 'https://api.instagram.com/v1/media/search?lat='+lat+'&lng='+lng+'&max_timestamp='+maxT+'&min_timestamp='+minT+'&distance='+dist+'&access_token='+token
     getUrl=url3
 

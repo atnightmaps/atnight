@@ -6,8 +6,8 @@ import time
 print 'iniciando flikcrAPI'
 
 #introducir datos de la APIFLICKR
-api_key = 'd56e1a2928279da848b2e197e771b397'
-api_secret = 'eb6ac4c7af245bb3'
+api_key = ''
+api_secret = ''
 
 #llamada a la api
 flickr = flickrapi.FlickrAPI(api_key, api_secret)
